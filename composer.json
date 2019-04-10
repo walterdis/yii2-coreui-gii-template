@@ -1,0 +1,29 @@
+{
+    "name": "walterdis/yii2-bs4-gii",
+    "description": "Bootstrap 4 Gii templates",
+    "type": "library",
+    "license": "MIT",
+    "require-dev": {
+        "phpunit/phpunit": "^8"
+    },
+    "authors": [
+        {
+            "name": "Walter Discher Cechinel",
+            "email": "mistrim@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Walterdis\\Bootstrap4\\Gii": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Walterdis\\Bootstrap4\\Gii\\Test\\": "test/"
+        }
+    }
+}
