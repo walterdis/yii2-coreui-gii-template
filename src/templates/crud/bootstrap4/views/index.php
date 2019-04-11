@@ -2,6 +2,7 @@
 
 use yii\helpers\Inflector;
 use yii\helpers\StringHelper;
+use yii\helpers\Html;
 
 /* @var $this yii\web\View */
 /* @var $generator yii\gii\generators\crud\Generator */
@@ -25,20 +26,29 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="card <?= Inflector::camel2id(StringHelper::basename($generator->modelClass)) ?>-index">
     <div class="card-header">
-        <?= "<i class=\"fa fa-align-justify\"></i> <?= " ?>Html::encode($this->title) ?>
+        <?= "<i class=\"fa fa-ghost\"></i> <?= " ?>Html::encode($this->title) ?>
 
         <div class="card-header-actions">
-            d
+            <span class="d-none d-md-inline d-lg-inline"> <!-- show on large devices -->
+                <?= "<?= " ?>Html::a('<i class="fas fa-plus"> </i> Novo Registro', ['create'], ['class' => 'btn btn-primary btn-sm']) ?>
+            </span>
+            <span class="d-xl-none d-md-none"> <!-- show on non-large devices -->
+                <?= "<?= \n" ?>
+                Html::a('<i class="fas fa-plus"> </i>', ['create'], [
+                    'data-toggle' => 'tooltip',
+                    'data-original-title' => 'Novo Registro',
+                    'data-placement' => 'top'
+                ])
+                ?>
+            </span>
         </div>
     </div>
+
+    <div class="card-body">
 <?= $generator->enablePjax ? "    <?php Pjax::begin(); ?>\n" : '' ?>
 <?php if(!empty($generator->searchModelClass)): ?>
 <?= "    <?php " . ($generator->indexWidgetType === 'grid' ? "// " : "") ?>echo $this->render('_search', ['model' => $searchModel]); ?>
 <?php endif; ?>
-
-    <p>
-        <?= "<?= " ?>Html::a(<?= $generator->generateString('Create ' . Inflector::camel2words(StringHelper::basename($generator->modelClass))) ?>, ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
 
 <?php if ($generator->indexWidgetType === 'grid'): ?>
     <?= "<?= " ?>GridView::widget([
@@ -81,4 +91,5 @@ if (($tableSchema = $generator->getTableSchema()) === false) {
     ]) ?>
 <?php endif; ?>
 <?= $generator->enablePjax ? "    <?php Pjax::end(); ?>\n" : '' ?>
+    </div>
 </div>

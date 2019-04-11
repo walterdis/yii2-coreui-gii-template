@@ -1,6 +1,6 @@
 {
-    "name": "walterdis/yii2-bs4-gii",
-    "description": "Bootstrap 4 Gii templates",
+    "name": "walterdis/yii2-gii-templates",
+    "description": "Yii2 Gii templates",
     "type": "library",
     "license": "MIT",
     "require-dev": {
@@ -18,12 +18,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Walterdis\\Bootstrap4\\Gii": "src/"
+            "Walterdis\\Yii2\\Gii\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Walterdis\\Bootstrap4\\Gii\\Test\\": "test/"
+            "Walterdis\\Yii2\\Gii\\Test\\": "test/"
         }
     }
 }

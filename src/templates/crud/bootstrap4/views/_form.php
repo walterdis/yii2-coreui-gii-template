@@ -13,6 +13,7 @@ if (empty($safeAttributes)) {
     $safeAttributes = $model->attributes();
 }
 
+$labelSave = trim( $generator->generateString('Salvar'), "'");
 echo "<?php\n";
 ?>
 
@@ -37,8 +38,8 @@ use yii\widgets\ActiveForm;
         echo '</div>'.PHP_EOL.PHP_EOL;
     }
 } ?>
-    <div class="card-footer">
-        <?= "<?= " ?>Html::submitButton('<i class="far fa-dot-circle"></i> ' . <?= $generator->generateString('Salvar') ?>, ['class' => 'btn btn-primary']) ?>
-    </div>
+</div>
+<div class="card-footer">
+    <?= "<?= " ?>Html::submitButton('<i class="far fa-dot-circle"></i> <?= $labelSave ?>', ['class' => 'btn btn-primary']) ?>
 </div>
 <?= "<?php " ?>ActiveForm::end(); ?>
