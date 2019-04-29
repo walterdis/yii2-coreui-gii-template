@@ -1,4 +1,4 @@
-# yii2-gii-template
+# yii2-coreui-gii-template
 Gii templates
 
 # Usage
