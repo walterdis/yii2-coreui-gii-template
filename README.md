@@ -3,7 +3,7 @@ Simple Gii templates customized for CoreUi
 
 # Usage
 
-composer require walterdis/yii2-coreui-gii-template
+- **composer require walterdis/yii2-coreui-gii-template**
 
 ## Configure Gii Module
 ```
