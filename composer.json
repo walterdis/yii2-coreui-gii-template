@@ -12,7 +12,6 @@
             "email": "mistrim@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2-bootstrap4": "~1.0.0"
