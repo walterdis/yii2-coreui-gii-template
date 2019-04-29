@@ -16,9 +16,9 @@ Gii templates
 ],
 ```
 
-### Include Yii2GiiTemplatesAsset
+### Include Yii2GiiTemplatesAsset and register
 ```
-use Walterdis\Yii2\Gii\assets\Yii2GiiTemplates;
+use Walterdis\Yii2\Gii\assets\Yii2CoreuiGiiTemplateAsset;
 ```
 
 Select the desired template in CRUD generation
