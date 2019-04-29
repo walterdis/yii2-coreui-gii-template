@@ -30,13 +30,13 @@ $this->params['breadcrumbs'][] = $this->title;
 
         <div class="card-header-actions">
             <span class="d-none d-md-inline d-lg-inline"> <!-- show on large devices -->
-                <?= "<?= " ?>Html::a('<i class="fas fa-plus"> </i> New Register', ['create'], ['class' => 'btn btn-success btn-sm']) ?>
+                <?= "<?= " ?>Html::a('<i class="fas fa-plus"> </i> Novo Registro', ['create'], ['class' => 'btn btn-primary btn-sm']) ?>
             </span>
             <span class="d-xl-none d-md-none"> <!-- show on non-large devices -->
                 <?= "<?= \n" ?>
                 Html::a('<i class="fas fa-plus"> </i>', ['create'], [
                     'data-toggle' => 'tooltip',
-                    'data-original-title' => 'New Register',
+                    'data-original-title' => 'Novo Registro',
                     'data-placement' => 'top'
                 ])
                 ?>
@@ -53,6 +53,12 @@ $this->params['breadcrumbs'][] = $this->title;
 <?php if ($generator->indexWidgetType === 'grid'): ?>
     <?= "<?= " ?>GridView::widget([
         'dataProvider' => $dataProvider,
+        'tableOptions' => [
+            'class' => 'table table-responsive-sm table-striped-2-rows table-sm',
+        ],
+        'afterRow' => function ($model, $key, $index, $grid) {
+            return '<tr><td colspan="5">Second content row here...</td></tr>';
+        },
         <?= !empty($generator->searchModelClass) ? "'filterModel' => \$searchModel,\n        'columns' => [\n" : "'columns' => [\n"; ?>
             ['class' => 'yii\grid\SerialColumn'],
 

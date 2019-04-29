@@ -1,0 +1,20 @@
+.table-striped-2-rows tbody tr:nth-of-type(2n+1), .table-striped-2-rows tbody tr:nth-of-type(2n+2) {
+    background-color: #FFF !important;
+}
+
+.table-striped-2-rows tbody tr:nth-of-type(4n+1), .table-striped-2-rows tbody tr:nth-of-type(4n+2) {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+
+.table-striped-2-rows tbody tr:nth-of-type(2n+2), .table-striped-2-rows tbody tr:nth-of-type(2n+2) {
+    border-bottom: 1px solid #CCC !important;
+}
+
+.table-striped-2-rows tbody tr td:nth-of-type(2n+1), .table-striped-2-rows tbody tr td:nth-of-type(2n+2) {
+    border-top: none !important;
+}
+
+.table-striped-2-rows tbody {
+    border-top: 1px solid #CCC !important;
+}
