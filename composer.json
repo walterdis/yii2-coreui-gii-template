@@ -1,11 +1,8 @@
 {
     "name": "walterdis/yii2-coreui-gii-template",
-    "description": "Yii2 Gii templates",
+    "description": "Yii2 CoreUi Gii templates",
     "type": "library",
     "license": "MIT",
-    "require-dev": {
-        "phpunit/phpunit": "^8"
-    },
     "authors": [
         {
             "name": "Walter Discher Cechinel",
