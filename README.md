@@ -11,8 +11,8 @@ composer require walterdis/yii2-coreui-gii-template
     'crud' => [
         'class' => \yii\gii\generators\crud\Generator::class,
         'templates' => [//setting for out templates
-            'walterdis-coreui-bs4-default' => '@vendor/walterdis/yii2-coreui-gii-templates/src/templates/crud/bootstrap4',
-            'walterdis-coreui-bs4-2-rows' => '@vendor/walterdis/yii2-coreui-gii-templates/src/templates/crud/bootstrap4-2rows',
+            'walterdis-coreui-bs4-default' => '@vendor/walterdis/yii2-coreui-gii-template/src/templates/crud/bootstrap4',
+            'walterdis-coreui-bs4-2-rows' => '@vendor/walterdis/yii2-coreui-gii-template/src/templates/crud/bootstrap4-2rows',
         ],
     
 ],
