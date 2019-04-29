@@ -1,7 +1,9 @@
 # yii2-coreui-gii-template
-Gii templates
+Simple Gii templates customized for CoreUi
 
 # Usage
+
+composer require walterdis/yii2-coreui-gii-templates
 
 ## Configure Gii Module
 ```
