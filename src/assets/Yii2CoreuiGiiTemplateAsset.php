@@ -13,7 +13,7 @@ use yii\web\AssetBundle;
  *
  * @package Walterdis\Yii2\Gii\assets
  */
-class Yii2GiiTemplateAsset extends AssetBundle
+class Yii2CoreuiGiiTemplateAsset extends AssetBundle
 {
 
     public $sourcePath = __DIR__;
