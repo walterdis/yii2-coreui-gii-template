@@ -26,9 +26,7 @@ class Yii2CoreuiGiiTemplateAsset extends AssetBundle
     ];
 
     public $depends = [
-        'yii\web\YiiAsset',
         BootstrapAsset::class,
-
     ];
 
 }
